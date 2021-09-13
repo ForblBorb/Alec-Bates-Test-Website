@@ -1,0 +1,91 @@
+/*site-style_css */
+@font-face { font-family: "hendrickson"; src: url(fonts/Hendrickson-K7GOD.otf); }
+
+@font-face { font-family: "ubuntu"; src: url(fonts/ubuntu-n1M0.ttf); }
+
+h1 { color: #f1f3d1; font-size: 60px; font-family: "ubuntu", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; text-align: center; text-shadow: 3px 3px 5px black; }
+
+p { color: #f1f3d1; font-family: "ubuntu", Arial, Helvetica, sans-serif; font-size: 20px; margin-left: 10px; margin-right: 10px; text-align: center; text-shadow: 3px 3px 7px black; }
+
+img { object-fit: contain; }
+
+header { padding: 20px; font-family: "ubuntu"; text-align: center; background-color: #3a3329; }
+
+footer { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; text-align: center; background-color: #3a3329; }
+
+/*button styles */
+button { padding: 10px 20px; font-family: "ubuntu"; text-align: center; cursor: pointer; outline: none; color: #f1f3d1; background-color: #5e5d3f; border: none; border-radius: 15px; box-shadow: 7px 7px 7px black; }
+
+button:hover { background-color: #3a3329; }
+
+button:active { background-color: #3a3329; box-shadow: 3px 3px 3px black; transform: translate(4px, 4px); }
+
+/* End button Styles*/
+/* Nav styles */
+nav { display: flex; font-family: "ubuntu"; background-color: #5e5d3f; }
+
+nav a { color: #f1f3d1; padding: 14px 20px; text-align: center; font-family: "ubuntu"; font-size: 15px; }
+
+nav a:hover { background-color: #ddd; color: black; }
+
+/* Makes nav bar vertical with small screen */
+@media screen and (max-width: 700px) { .row, nav { flex-direction: column; } }
+
+/* End nav styles */
+/*Modal styles*/
+.modal { display: none; /* Hidden by default */ position: fixed; /* Stay in place */ z-index: 1; /* Sit on top */ left: 0; top: 50%; padding-bottom: 100px; width: 100%; height: 100%; overflow: auto; /* Enable scroll if needed */ background-color: none; }
+
+/* Modal Content */
+.modal-content { color: #f1f3d1; background-color: #284128; margin: auto; padding: 20px; border: 1px solid #3a3329; width: 75%; }
+
+/*End Modal Styles*/
+.row { display: flex; flex-wrap: wrap; }
+
+/* left sidebar for main page*/
+.side_column { flex: 30%; background-color: #415730; padding: 20px; }
+
+/* Main column for main page*/
+.main_column { flex: 70%; background-color: #284128; padding: 20px; }
+
+/*Contains styling for the form wrapper element and custom classes. For elements like buttons, see "elements_form" */
+form { display: flex; font-family: "ubuntu"; background-color: #415730; flex-wrap: wrap; justify-content: space-evenly; }
+
+.color_select { display: flex; flex-direction: column; background-color: #284128; margin: 10px; font-family: "ubuntu"; font-size: 15px; color: #f1f3d1; justify-content: center; }
+
+.effect_select { display: flex; flex-direction: column; background-color: #284128; margin: 10px; font-family: "ubuntu"; font-size: 15px; color: #f1f3d1; }
+
+.words_to_display { display: flex; flex-direction: column; background-color: #284128; margin: 10px; font-family: "ubuntu"; font-size: 15px; color: #f1f3d1; justify-content: center; }
+
+.submit_section { display: flex; flex-direction: column; background-color: #284128; margin: 10px; font-family: "ubuntu"; font-size: 15px; color: #f1f3d1; }
+
+/*Slideshow Styles*/
+.slideshow-container { position: relative; margin: auto; }
+
+/*Hide images by default*/
+.slide { display: none; }
+
+.prev, .next { cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px; padding: 15px; color: #f1f3d1; font-weight: bold; font-size: 18px; font-family: "ubuntu"; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none; }
+
+.next { right: 0; border-radius: 3px 0 0 3px; }
+
+/*hover backgrounds*/
+.prev:hover, .next:hover { background-color: rgba(0, 0, 0, 0.8); }
+
+.numbertext { color: #f1f3d1; font-size: 12px; padding: 8px 12px; position: absolute; top: 0; }
+
+.dot { cursor: pointer; height: 15px; width: 15px; margin: 0 2px; background-color: #3a3329; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease; }
+
+.active, .dot:hover { background-color: #5e5d3f; }
+
+/* Fading animation */
+.fade { -webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s; }
+
+@-webkit-keyframes fade { from { opacity: 0.4; }
+  to { opacity: 1; } }
+
+@keyframes fade { from { opacity: 0.4; }
+  to { opacity: 1; } }
+
+* { box-sizing: border-box; }
+
+body { background-color: #5e5d3f; }
