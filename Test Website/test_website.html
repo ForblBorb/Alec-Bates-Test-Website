@@ -28,7 +28,18 @@
         </button>
         <p id="slideshow_description" style="display:none">
           Photographs taken in the UC Santa Cruz Arboretum in May 2019
-        </p>
+        </p><br>
+
+        <div class="dropdown">
+          <button onclick="dropFunction()" class="dropbtn">Dropdown Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search..." id="searchInput" onkeyup="filterFunction()">
+            <a href="#here">Here</a> 
+            <a href="#there">There</a> 
+            <a href="#everywhere">Everywhere</a> 
+            <a href="#nowhere">Nowhere</a> 
+          </div>
+        </div>
       </div>
 
       <div class="main_column">
@@ -114,6 +125,7 @@
     </footer>
     
     <script src="js/topReturn.js"></script>
+    <script src="js/dropFilter.js"></script>
     <script src="js/slideshow.js"></script>
   </body>
 </html>
