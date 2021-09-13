@@ -1,0 +1,20 @@
+input {
+  background-color: $fifthColor;
+  color: $textColorTwo;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: $fifthColor;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+select {
+  color: $textColorTwo;
+  background-color: $fifthColor;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
