@@ -1,0 +1,17 @@
+/*site-style_css */
+
+@import "colors";
+@import "fonts";
+@import "elements_basic";
+@import "elements_form";
+@import "elements_advanced";
+@import "forms";
+@import "slideshow";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $secondColor;
+}

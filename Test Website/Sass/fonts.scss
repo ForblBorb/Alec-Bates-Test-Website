@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "hendrickson";
+    src: url(fonts/Hendrickson-K7GOD.otf);
+  }
+  @font-face {
+    font-family: "ubuntu";
+    src: url(fonts/ubuntu-n1M0.ttf);
+  }
+
+$mainFont: "ubuntu";
+$secondFont: "ubuntu";
+$baseFontSize: 15px;

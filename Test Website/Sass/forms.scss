@@ -1,0 +1,48 @@
+/*Contains styling for the form wrapper element and custom classes. For elements like buttons, see "elements_form" */
+
+form {
+  display: flex;
+  font-family: $secondFont;
+  background-color: $thirdColor;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.color_select {
+  display: flex;
+  flex-direction: column;
+  background-color: $fourthColor;
+  margin: 10px;
+  font-family: $secondFont;
+  font-size: $baseFontSize;
+  color: $textColorOne;
+  justify-content: center;
+}
+.effect_select {
+  display: flex;
+  flex-direction: column;
+  background-color: $fourthColor;
+  margin: 10px;
+  font-family: $secondFont;
+  font-size: $baseFontSize;
+  color: $textColorOne;
+}
+.words_to_display {
+  display: flex;
+  flex-direction: column;
+  background-color: $fourthColor;
+  margin: 10px;
+  font-family: $secondFont;
+  font-size: $baseFontSize;
+  color: $textColorOne;
+  justify-content: center;
+}
+.submit_section {
+  display: flex;
+  flex-direction: column;
+  background-color: $fourthColor;
+  margin: 10px;
+  font-family: $secondFont;
+  font-size: $baseFontSize;
+  color: $textColorOne;
+}
