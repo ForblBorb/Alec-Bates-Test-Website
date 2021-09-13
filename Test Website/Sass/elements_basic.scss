@@ -1,0 +1,24 @@
+h1 {
+  color: $textColorOne;
+  font-size: 60px;
+  font-family: $mainFont, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 3px 3px 5px black;
+}
+
+p {
+  color: $textColorOne;
+  font-family: $secondFont, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  text-shadow: 3px 3px 7px black;
+}
+
+img {
+  object-fit: contain;
+}
+
+
