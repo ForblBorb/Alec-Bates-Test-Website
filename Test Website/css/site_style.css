@@ -53,6 +53,28 @@ nav a:hover { background-color: #ddd; color: black; }
 /* Main column for main page*/
 .main_column { flex: 70%; background-color: #284128; padding: 20px; }
 
+/*Custom Dropdown Styles*/
+.dropbtn { background-color: pink; color: #2c300d; padding: 12px; font-size: 12px; margin: 30px; font-family: "ubuntu"; border: none; cursor: pointer; }
+
+.dropbtn:hover, .dropbtn:focus { color: #f1f3d1; background-color: #3a3329; }
+
+#searchInput { box-sizing: border-box; font-family: "ubuntu"; padding: 12px 3px 12px 42px; border: none; border-bottom: 2px solid #3a3329; }
+
+#searchInput:focus { outline: 5px solid #5e5d3f; }
+
+.dropdown { position: relative; display: inline-block; }
+
+.dropdown-content { display: none; position: absolute; background-color: pink; min-width: 200px; border: 1px solid #5e5d3f; z-index: 1; }
+
+/*links within dropdown*/
+.dropdown-content a { color: #5e5d3f; padding: 12px, 15px; font-family: "ubuntu"; display: block; }
+
+.dropdown-content a:hover { background-color: #3a3329; color: #f1f3d1; }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show { display: block; }
+
+/*End Custom Dropdown Styles */
 /*Contains styling for the form wrapper element and custom classes. For elements like buttons, see "elements_form" */
 form { display: flex; font-family: "ubuntu"; background-color: #415730; flex-wrap: wrap; justify-content: space-evenly; }
 
@@ -62,7 +84,7 @@ form { display: flex; font-family: "ubuntu"; background-color: #415730; flex-wra
 
 .words_to_display { display: flex; flex-direction: column; background-color: #284128; margin: 10px; font-family: "ubuntu"; font-size: 15px; color: #f1f3d1; justify-content: center; }
 
-.submit_section { display: flex; flex-direction: column; background-color: #284128; margin: 10px; font-family: "ubuntu"; font-size: 15px; color: #f1f3d1; align-content: center; }
+.submit_section { display: flex; flex-direction: column; background-color: #284128; margin: 10px; font-family: "ubuntu"; font-size: 15px; color: #f1f3d1; align-content: center; justify-content: center; }
 
 /*Slideshow Styles*/
 .slideshow-container { position: relative; margin: auto; }
