@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Alec's Test Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/site-style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Alec's Test Website</h1>
+      <p><b>Welcome</b> to my web-design example site!</p>
+    </header>
+    <nav class="nav">
+      <a href="test-website.html">Home</a>
+      <a href="test-website-form-example.html">Form Examples</a>
+    </nav>
+
+    <div class="layout-row">
+      <div class="layout-row__side-column">
+        <h1 style="font-size: 30px">Flower Photography <br />Slideshow</h1>
+        <button
+          class="button"
+          type="button"
+          onclick="document.getElementById('slideshow-description').style.display='block'"
+        >
+          <p>Click for more information</p>
+        </button>
+        <p id="slideshow-description" style="display: none">
+          Photographs taken in the UC Santa Cruz Arboretum in May 2019
+        </p>
+        <br />
+
+        <div class="dropdown">
+          <button onclick="dropFunction()" class="dropbtn">
+            <p>Dropdown Menu</p>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <input
+              type="text"
+              placeholder="Search..."
+              id="searchInput"
+              onkeyup="filterFunction()"
+            />
+            <a href="#here">Here</a>
+            <a href="#there">There</a>
+            <a href="#everywhere">Everywhere</a>
+            <a href="#nowhere">Nowhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="layout-row__main-column">
+        <!-- Slideshow Code-->
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <div class="numbertext">1/4</div>
+            <img
+              title="Pink Flowers"
+              src="front-page/slideshow/images/pink-flowers.jpg"
+              alt="pink-flowers"
+              width="1008"
+              height="756"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+
+          <div class="slide fade">
+            <div class="numbertext">2/4</div>
+            <img
+              title="Orange Flower"
+              src="front-page/slideshow/images/orange-flower.jpg"
+              alt="orange-flower"
+              width="1008"
+              height="756"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+
+          <div class="slide fade">
+            <div class="numbertext">3/4</div>
+            <img
+              title="Blue Flowers"
+              src="front-page/slideshow/images/blue-flowers.jpg"
+              alt="blue-flowers"
+              width="1008"
+              height="756"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+
+          <div class="slide fade">
+            <div class="numbertext">4/4</div>
+            <img
+              title="Yellow Flowers"
+              src="front-page/slideshow/images/yellow-flowers.jpg"
+              alt="yellow-flowers"
+              width="1008"
+              height="756"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+
+          <!-- Next and Previous Buttons-->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <!-- Slide Navigation Dots-->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Section -->
+    <div id="topReturnModal" class="modal">
+      <div class="modal-content">
+        <p>Are you sure?</p>
+        <button class="button" id="topReturnYes">Yes</button>
+        <button class="button" id="topReturnNo">No</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>This is a footer</p>
+      <button
+        class="button"
+        onclick="topReturn()"
+        id="topReturn"
+        title="Return to top"
+      >
+        Return to top?
+      </button>
+    </footer>
+
+    <script async src="front-page/slideshow/slideshow.js"></script>
+    <script async src="front-page/top-return/topReturn.js"></script>
+    <script async src="front-page/dropdown/dropFilter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Alec's Test Website-Form Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/site-style.css" />
+  </head>
+
+  <body>
+    <header class="header"><h1>Alec's Test Website</h1></header>
+    <nav class="nav">
+      <a href="test-website.html">Home</a>
+      <a href="test-website-form-example.html">Form Examples</a>
+    </nav>
+    <h1>Form Examples</h1>
+
+    <form
+      name="myForm"
+      class="form"
+      action="/form-action-blank.php"
+      onsubmit="return processForm()"
+      method="get"
+    >
+      <div class="form__color-select">
+        <p>(Mandatory) Please select a color <br />for the footer:</p>
+        <label for="footer-red"><p>Red</p></label><br />
+        <input
+          type="radio"
+          id="footer-red"
+          name="footer-color"
+          value="red"
+        /><br />
+        <label for="footer-yellow"><p>Yellow</p></label><br />
+        <input
+          type="radio"
+          id="footer-yellow"
+          name="footer-color"
+          value="yellow"
+        /><br />
+        <label for="footer-blue"><p>Blue</p></label><br />
+        <input
+          type="radio"
+          id="footer-blue"
+          name="footer-color"
+          value="blue"
+        /><br />
+        <label for="footer-reset"><p>Default</p></label><br />
+        <input
+          type="radio"
+          id="footer-reset"
+          name="footer-color"
+          value="reset"
+        /><br />
+      </div>
+
+      <div class="form__effect-select">
+        <p>Optional effects for footer:</p>
+        <label for="option1"><p>Box shadow</p></label><br />
+        <input type="checkbox" id="option1" name="option1" value="1" /><br />
+        <label for="option2"><p>Vertical Writing</p></label><br />
+        <input type="checkbox" id="option2" name="option2" value="1" /><br />
+        <label for="option3"><p>Curved Corners</p></label><br />
+        <input type="checkbox" id="option3" name="option3" value="1" /><br />
+      </div>
+
+      <div class="form__word-select">
+        <label for="word-choices"
+          ><p>Choose a word to display in the footer:</p></label
+        >
+
+        <select id="word-choices" name="word-choices" size="7">
+          <option value="Joy">Joy</option>
+          <option value="Fun">Fun</option>
+          <option value="Love">Love</option>
+          <option value="Hope">Hope</option>
+          <option value="Happiness">Happiness</option>
+          <option value="Peace">Peace</option>
+          <option value="Satisfaction">Satisfaction</option>
+          <option value="Success">Success</option>
+          <option value="Luck">Luck</option>
+          <option value="Perseverance">Perseverance</option>
+          <option value="Kindness">Kindness</option>
+          <option value="Empathy">Empathy</option>
+          <option value="Compassion">Compassion</option>
+          <option value="Life">Life</option>
+          <option value="Food">Food</option>
+        </select>
+      </div>
+
+      <div class="form__submit-section">
+        <input type="submit" value="Submit" /><br />
+      </div>
+    </form>
+
+    <footer class="footer" id="footer"><p id="footer-text"></p></footer>
+
+    <script src="form-page/form/formProcess.js"></script>
+  </body>
+</html>
